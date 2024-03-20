@@ -1,0 +1,34 @@
+// This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © Flapjackcoin
+
+//@version=4
+study(title="EMA with Volume Weighted EMA", shorttitle="EMA & VWEMA", overlay = true)
+
+// EMA Parameters
+emaLength = input(14, title="EMA Length")
+emaSource = close
+emaLine = ema(emaSource, emaLength)
+
+// Volume Weighted EMA Parameters
+vwemaLength = input(14, title="VWEMA Length")
+halfVolume = volume / 2
+vwemaSource = close * halfVolume
+vwemaLine = ema(vwemaSource, vwemaLength) / ema(halfVolume, vwemaLength)
+
+// Detect Trend Changes
+emaCrossUp = crossover(emaLine, vwemaLine)
+emaCrossDown = crossunder(emaLine, vwemaLine)
+
+// Change VWEMA color based on trend
+vwemaColor = emaCrossUp ? color.green : emaCrossDown ? color.red : color.rgb(245, 182, 11)
+
+// Plot EMA
+plot(emaLine, color=color.blue, title="EMA Line", linewidth=3)
+
+
+// Plot Circles on VWEMA
+plotshape(series=vwemaLine, location=location.absolute, style=shape.circle, color=vwemaColor, title="VWEMA Circles")
+
+// Plot Arrows
+plotshape(series=emaCrossUp, location=location.belowbar, color=color.green, style=shape.triangleup, title="Up Trend Arrow")
+plotshape(series=emaCrossDown, location=location.abovebar, color=color.red, style=shape.triangledown, title="Down Trend Arrow")
