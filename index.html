@@ -4,9 +4,15 @@
 
     <head><meta charset="utf-8">
 
-<a href="https://flapjacode.github.io/0ximage/"><img src="https://i.ibb.co/WcgcdKZ/0xDreams.png" alt="0xDreams" border="1" style="width:400px;height:200px;">
-</a>
-<p style="font-size:150px;">0xDreams</p>
+	<script src='https://terminal.jup.ag/main-v2.js'></script>
+
+<div style="display: flex; align-items: top;">
+    <a href="https://flapjacode.github.io/0ximage/">
+        <img src="https://i.ibb.co/WcgcdKZ/0xDreams.png" alt="0xDreams" border="1" style="width:500px;height:300px;">
+    </a>
+    <p style="font-family:cascadia code light;font-size:48px; margin-left: 20px; color:#6aff00;">Built on Solana</p>
+</div>
+
    </head>
    <!-- This is a comment: The head section contains metadata and the title of the webpage -->
     <title>0xDreams</title>
@@ -19,7 +25,67 @@
 
 <body>
 
-	<p>
+			<!-- Jup terminal -->
+<script>
+        window.Jupiter.init({
+            displayMode: "widget",
+            endpoint: "https://api.mainnet-beta.solana.com",
+        });
+    </script>	
+	
+			<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+  {
+  "symbols": [
+    [
+      "BITSTAMP:BTCUSD|1D"
+    ],
+    [
+      "COINBASE:SOLUSD|1D"
+    ],
+    [
+      "UNISWAP:NVDAWETH_71F05C|1D"
+    ]
+  ],
+  "chartOnly": false,
+  "width": 550,
+  "height": 400,
+  "locale": "en",
+  "colorTheme": "dark",
+  "autosize": false,
+  "showVolume": true,
+  "showMA": true,
+  "hideDateRanges": false,
+  "hideMarketStatus": false,
+  "hideSymbolLogo": false,
+  "scalePosition": "right",
+  "scaleMode": "Normal",
+  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+  "fontSize": "10",
+  "noTimeScale": false,
+  "valuesTracking": "1",
+  "changeMode": "price-and-percent",
+  "chartType": "area",
+  "maLineColor": "#2962FF",
+  "maLineWidth": 1,
+  "maLength": 9,
+  "lineWidth": 2,
+  "lineType": 0,
+  "dateRanges": [
+    "1d|1",
+    "1m|30",
+    "3m|60",
+    "12m|1D",
+    "60m|1W",
+    "all|1M"
+  ]
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
    
 
 
