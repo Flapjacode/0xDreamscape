@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Attach the loading script in your <head /> -->
+    <script src='https://terminal.jup.ag/main-v2.js'></script>
+</head>
+<body>
+    <!-- Prepare a div in your <body> for Terminal to render -->
+    <div id="integrated-terminal"></div>
+
+    <script>
+        window.Jupiter.init({
+            displayMode: "integrated",
+            integratedTargetId: "integrated-terminal",
+            endpoint: "https://api.mainnet-beta.solana.com",
+        });
+    </script>
+</body>
+</html>
