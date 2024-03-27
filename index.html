@@ -4,10 +4,9 @@
 
     <head><meta charset="utf-8">
 
-	<!--Load Script Jupiter-->
+ <!-- Attach the loading script in your <head /> -->
+    <script src='https://terminal.jup.ag/main-v2.js'></script>
 	
-	<script src='https://terminal.jup.ag/main-v2.js'></script>
-
 	<!--Text and Image settings-->
 <div style="display: flex; align-items: top;">
     <a href="https://twitter.com/Flapjacks4All">
@@ -15,8 +14,12 @@
     </a>
     <p style="font-family:cascadia code light;font-size:60px; margin-left: 20px; color:#aaff00;"><b>Built on Solana</b></p>
 </div>
+	
+	<!--Load Script Jupiter-->
 
-   </head>
+   
+   
+  </head>
    <!-- Formatting -->
     <title>0xDreams</title>
  <style>
@@ -47,16 +50,19 @@
     </div>
 </body> 		
 
-<a style="font-size:20px;font-family:cascadia code light;">If you have a wallet you can also use "Jupiter Swap" in bottom right corner</a>
+<a style="font-size:20px;font-family:cascadia code light;">If you have a wallet you can also use "Jupiter Swap"</a>
 		
-			<!-- Jup terminal -->
-<script>
-            displayMode: "widget",
-            endpoint: "https://api.mainnet-beta.solana.com",
+		 <!-- Prepare a div in your <body> for Terminal to render -->
+    <div id="integrated-terminal"></div>
+
+    <script>
         window.Jupiter.init({
+            displayMode: "integrated",
+            integratedTargetId: "integrated-terminal",
+            endpoint: "https://api.mainnet-beta.solana.com",
         });
-    </script>	
-	
+    </script>
+		
 <!-- TradingView Widget BEGIN -->
 <h2>
 <div class="tradingview-widget-container">
