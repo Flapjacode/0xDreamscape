@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- Attach the loading script in your <head /> -->
+
 <title>0xSolutions</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +10,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<script src='https://terminal.jup.ag/main-v2.js'></script>
 <body id="myPage">
 
 <!-- Sidebar on click -->
@@ -15,10 +18,10 @@
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
     <i class="fa fa-remove"></i>
   </a>
-  <a href="#" class="w3-bar-item w3-button">SolanaCLI</a>
+  <a href="https://docs.solanalabs.com/cli/install" class="w3-bar-item w3-button">SolanaCLI</a>
   <a href="http://jup.ag" class="w3-bar-item w3-button">Jup.ag</a>
   <a href="http://tradingview.com/" class="w3-bar-item w3-button">Trading View</a>
-  <a href="#" class="w3-bar-item w3-button">Moonpay (Crypto with Debit Card)</a>
+  <a href="https://www.moonpay.com/" class="w3-bar-item w3-button">Moonpay (Crypto with Debit Card)</a>
   <a href="#" class="w3-bar-item w3-button">WebTrend Anylitics</a>
 </nav>
 
@@ -70,6 +73,9 @@
     <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Github">Nostalgia Simulator</button>
   </div>
 </div>
+
+
+
 
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
@@ -196,36 +202,83 @@
 </div>
 
 <!-- Work Row -->
+		<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-square w3-teal"
+  style="position:absolute;top:-28px;left:24px">QuiklinkTools</a>
+</div><br>
+
 <div class="w3-theme-l1" id="work">
 
 <div class="w3-padding-64">
 </div>
-<h2>Our Job!</h2>
-<p>	The world we know is in a radical state of advancement with no stopping anytime soon. <br>
-Our team is full of intelligent, inovative, and informative individuals who's goal is to help any individual, <br>     
-bussiness, or party advance into a new generation of strategies. Offering bussiness building plans for online <br>
-from the ground up, or an easy transition of your preexisting business to teach and help break into: Web3, <br>
-New mareting strategies, and new ways of investing. </p>
 
-<p>	 Our hope is to offer a range of strategies that fit each individuals needs. Create an ecomerce site that<br>
- accepts and converts any currencey, help build an online  presence through marketing and social media using AI <br>
- and other tools to make your bussiness stand out, or just meet with our anylist and get the newest information <br>
- on market trends and where to invest. A huge part of what we do is teaching the skills to do your bussiness how<br>
- you want ahile accessing any market you want. Generate passive income and learn a multitude of investing strategys.<br> 
- The world will only keep moving get ahead of the pack!</p>
+    <style>
+        .row {
+            display: flex;
+        }
+        .column {
+            flex: 50%;
+        }
+        /* Add additional styling as needed */
+    </style>
+
+    <div class="row">
+        <div class="column">
+            <h2>Our Job!</h2>
+            <p>The world we know is in a radical state of advancement with no stopping anytime soon. Our team is full of intelligent, innovative, and informative individuals whose goal is to help any individual, business, or party advance into a new generation of strategies. Offering business building plans for online from the ground up, or an easy transition of your preexisting business to teach and help break into: Web3, New marketing strategies, and new ways of investing.</p>
+            <p>Our hope is to offer a range of strategies that fit each individual's needs. Create an e-commerce site that accepts and converts any currency, help build an online presence through marketing and social media using AI and other tools to make your business stand out, or just meet with our analysts and get the newest information on market trends and where to invest. A huge part of what we do is teaching the skills to do your business how you want while accessing any market you want. Generate passive income and learn a multitude of investing strategies. The world will only keep moving; get ahead of the pack!</p>
+        </div>
+        <div class="column">
+		
+
+         <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="height:100%;width:100%">
+  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "autosize": true,
+  "symbol": "COINBASE:BTCUSD",
+  "interval": "120",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "calendar": false,
+  "studies": [
+    "STD;Donchian_Channels",
+    "STD;Ichimoku%1Cloud",
+    "STD;MACD",
+    "STD;Stochastic_RSI"
+  ],
+  "support_host": "https://www.tradingview.com"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+        </div>
+    </div>
+
+
+
+
 </div>
 
+<!-- Prepare a div in your <body> for Terminal to render -->
+<div id="integrated-terminal"></div>
+<script>
+  window.Jupiter.init({
+    displayMode: "integrated",
+    integratedTargetId: "integrated-terminal",
+    endpoint: "https://api.mainnet-beta.solana.com",
+  });
+</script>
+<!-- TradingView Widget BEGIN -->
 
 
-
-<!--Tradeview-->
-
-
-<!-- Container -->
-<div class="w3-container" style="position:relative">
-  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-  style="position:absolute;top:-28px;right:24px">Market</a>
-</div>
 
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
@@ -243,104 +296,18 @@ New mareting strategies, and new ways of investing. </p>
 }
   </script>
 </div>
-<!-- TradingView Widget END -->
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-  {
-  "width": "1500",
-  "height": "980",
-  "symbol": "COINBASE:SOLUSD",
-  "interval": "240",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "en",
-  "backgroundColor": "rgba(0, 0, 0, 1)",
-  "hide_side_toolbar": false,
-  "allow_symbol_change": true,
-  "calendar": false,
-  "studies": [
-    "STD;Ichimoku%1Cloud",
-    "STD;MACD",
-    "STD;Stochastic_RSI"
-  ],
-  "support_host": "https://www.tradingview.com"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-<!-- TradingView Widget END -->
-
 
 
 <!-- Pricing Row -->
 <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
     <h2>PRICING</h2>
-    <p>Choose a pricing plan that fits your needs.</p>
-	<p>Forum, Engage, help, Answer Free Learning tools, &
+    <p><a href="#">Choose a pricing plan that fits your needs.</a></p>
+
+		<li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large" action=><i class="fa fa-check"></i> Sign Up</button><b> for free to use the forum and engage, access to help and answers, free learning tools, &
         Endless Support</p>
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme">
-          <p class="w3-xlarge">Explorer</p>
         </li>
-        <li class="w3-padding-16"><b>Newsletter ( Market Updates )</b>Email</li>
-        <li class="w3-padding-16"><b>Discord</b> Access to our learning courses and docs</li>
-        <li class="w3-padding-16"><b>5</b> 0xTemplates (Smart Contract, CoinGenration or Meta Data, Nft Creation, Futures Strategies)</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-		<li class="w3-padding-16"><b>5</b> Coding choices</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 2</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-        </li>
-      </ul>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme-l2">
-          <p class="w3-xlarge">Trader</p>
-        </li>
-        <li class="w3-padding-16"><b>Newsletter</b> Market Updates & Trade Signals</li>
-        <li class="w3-padding-16"><b>Discord + Advanced  </b><b> Access</b> to our learning courses and docs</li>
-        <li class="w3-padding-16"><b>25</b> 0xTemplates (Smart contract, CoinGenration or Meta Data, Nft Creation, Futures Strategies)</li>
-        <li class="w3-padding-16"><b>10</b> Coding Choices</li>
-		<li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 10</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-        </li>
-      </ul>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme">
-          <p class="w3-xlarge">Developer</p>
-        </li>
-        <li class="w3-padding-16"><b>All Access</b>  Market Updates, Trade Indicators & Signals</li>
-        <li class="w3-padding-16"><b> All Access to 0x</b> Tools</li>
-        <li class="w3-padding-16"><b>All</b> 0xTemplates (Smart contract, CoinGenration or Meta Data, Nft Creation, Futures Strategies)</li>
-        <li class="w3-padding-16"><b>Endless</b> Code </li>
-		<li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 25</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-        </li>
-      </ul>
-    </div>
+    
 </div>
 
 <!-- Contact Container -->
@@ -391,7 +358,7 @@ New mareting strategies, and new ways of investing. </p>
   <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
   <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
   <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> & <a href="https://docs.solanalabs.com/cli/install" target="_blank">Solana</a></p>
 
   <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
     <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
