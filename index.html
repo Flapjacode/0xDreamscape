@@ -1,401 +1,401 @@
-<!DOCTYPE html>
-<html>
-<head>
-<!-- Attach the loading script in your <head /> -->
+		<!DOCTYPE html>
+		<html>
+		<head>
+		<!-- Attach the loading script in your <head /> -->
 
-<title>0xSolutions</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<script src='https://terminal.jup.ag/main-v2.js'></script>
-<body id="myPage">
+		<title>0xSolutions</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		</head>
+		<script src='https://terminal.jup.ag/main-v2.js'></script>
+		<body id="myPage">
 
-<!-- Sidebar on click -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
-    <i class="fa fa-remove"></i>
-  </a>
-  <a href="https://docs.solanalabs.com/cli/install" class="w3-bar-item w3-button">SolanaCLI</a>
-  <a href="http://jup.ag" class="w3-bar-item w3-button">Jup.ag</a>
-  <a href="http://tradingview.com/" class="w3-bar-item w3-button">Trading View</a>
-  <a href="https://www.moonpay.com/" class="w3-bar-item w3-button">Moonpay (Crypto with Debit Card)</a>
-  <a href="#" class="w3-bar-item w3-button">WebTrend Anylitics</a>
-</nav>
-
-
-
-
-<!-- Navbar -->
-<div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>0xDreams</a>
-  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
-  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
-  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button" title="Notifications">0xLinks <i class="fa fa-caret-down"></i></button>     
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-      <a href="https://flapjacode.github.io/0xDreamscape/" class="w3-bar-item w3-button">Free 0xResources</a>
-      <a href="#" class="w3-bar-item w3-button">0xNews</a>
-      <a href="https://soundcloud.com/admiror" class="w3-bar-item w3-button">0xMusic</a>
-    </div>
-  </div>
-  <a href="https://www.torrentz.eu.com/#gsc.tab=0" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
- </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="#team" class="w3-bar-item w3-button">Team</a>
-    <a href="#work" class="w3-bar-item w3-button">Work</a>
-    <a href="#pricing" class="w3-bar-item w3-button">Pricing</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    
-	
-	<a href="#" class="w3-bar-item w3-button">Search</a>
-  
-  
-  
-  </div>
-</div>
+		<!-- Sidebar on click -->
+		<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+		  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+			<i class="fa fa-remove"></i>
+		  </a>
+		  <a href="https://docs.solanalabs.com/cli/install" class="w3-bar-item w3-button">SolanaCLI</a>
+		  <a href="http://jup.ag" class="w3-bar-item w3-button">Jup.ag</a>
+		  <a href="http://tradingview.com/" class="w3-bar-item w3-button">Trading View</a>
+		  <a href="https://www.moonpay.com/" class="w3-bar-item w3-button">Moonpay (Crypto with Debit Card)</a>
+		  <a href="#" class="w3-bar-item w3-button">WebTrend Anylitics</a>
+		</nav>
 
 
 
 
-<!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity">
- <a href="https://ibb.co/CnhnX0g"><img src="https://i.ibb.co/WcgcdKZ/0xDreams.png" alt="0xDreams" border="0" style="width:100%;min-height:450px;max-height:500px;"></a>
-  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Github">Nostalgia Simulator</button>
-  </div>
-</div>
+		<!-- Navbar -->
+		<div class="w3-top">
+		 <div class="w3-bar w3-theme-d2 w3-left-align">
+		  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+		  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>0xDreams</a>
+		  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+		  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+		  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
+		  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+			<div class="w3-dropdown-hover w3-hide-small">
+			<button class="w3-button" title="Notifications">0xLinks <i class="fa fa-caret-down"></i></button>     
+			<div class="w3-dropdown-content w3-card-4 w3-bar-block">
+			  <a href="https://flapjacode.github.io/0xDreamscape/" class="w3-bar-item w3-button">Free 0xResources</a>
+			  <a href="#" class="w3-bar-item w3-button">0xNews</a>
+			  <a href="https://soundcloud.com/admiror" class="w3-bar-item w3-button">0xMusic</a>
+			</div>
+		  </div>
+		  <a href="https://www.torrentz.eu.com/#gsc.tab=0" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+		 </div>
+
+		  <!-- Navbar on small screens -->
+		  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+			<a href="#team" class="w3-bar-item w3-button">Team</a>
+			<a href="#work" class="w3-bar-item w3-button">Work</a>
+			<a href="#pricing" class="w3-bar-item w3-button">Pricing</a>
+			<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+			
+			
+			<a href="#" class="w3-bar-item w3-button">Search</a>
+		  
+		  
+		  
+		  </div>
+		</div>
 
 
 
 
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-  {
-  "symbols": [
-    {
-      "proName": "BITSTAMP:BTCUSD",
-      "title": "Bitcoin"
-    },
-    {
-      "proName": "BITSTAMP:ETHUSD",
-      "title": "Ethereum"
-    },
-    {
-      "description": "Solana",
-      "proName": "BINANCE:SOLUSDT"
-    },
-    {
-      "description": "PEPE",
-      "proName": "BINANCE:PEPEUSDT"
-    },
-    {
-      "description": "Poilygon",
-      "proName": "COINBASE:MATICUSD"
-    },
-    {
-      "description": "Hedera",
-      "proName": "BYBIT:HBARUSDT"
-    },
-    {
-      "description": "Bonk",
-      "proName": "BYBIT:BONKUSDT"
-    },
-    {
-      "description": "RATS",
-      "proName": "MEXC:RATSUSDT"
-    },
-    {
-      "description": "Fil EU",
-      "proName": "COINBASE:FILEUR"
-    },
-    {
-      "description": "ShibEu",
-      "proName": "BITSTAMP:SHIBEUR"
-    },
-    {
-      "description": "Perpetual",
-      "proName": "BINGX:DYDXUSDT.PS"
-    },
-    {
-      "description": "Perpetual",
-      "proName": "BINGX:SLERFUSDT.P"
-    }
-  ],
-  "showSymbolLogo": true,
-  "isTransparent": false,
-  "displayMode": "adaptive",
-  "colorTheme": "dark",
-  "locale": "en"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-
-
-<!-- Modal -->
-<!-- Modal -->
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content w3-card-4 w3-animate-top">
-    <header class="w3-container w3-teal w3-display-container"> 
-      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-      <h4>Listen! You're about to travel to another Link...</h4>
-      <h5>It's dangerous to go alone! Take this   🗡    <i class="fa-solid fa-sword"></i></h5>
-    </header>
-    <div class="w3-container">
-      <p></p>
-      <p>Menu </p>
-		<p> <a class="w3-text-teal" href="https://soundcloud.com/admiror"> Music </a> </p>
-		<p><a class="w3-text-teal" href="https://flapjacode.github.io/0xDreamscape/">Start Quest...</a> </p>
-		<p><a class="w3-text-teal" href="https://lhohq.info/">DO NOT CLICK!</a> </p>
-    </div>
-    <footer class="w3-container w3-teal">
-      <p>Trigger Warning: the last link contains an infinite linktree leading to flashing lights, odd sounds, conspiracy theorys, mature content, what we hope is an "art" film, and overall disturbing subject matter.. TAKE THIS /̵͇̿̿/’̿’̿ ̿ ̿̿ ̿̿ ̿̿ </p>
-    </footer>
-  </div>
-</div>
-
-
-<!-- Team Container -->
-<div class="w3-container w3-padding-64 w3-center" id="team">
-<h2>OUR TEAM</h2>
-<p>Contact to join dev team:</p>
-
-
-
-<div class="w3-quarter">
- <img src="https://i.ibb.co/xFD4SVL/OIP-3.jpg" alt="OIP-3" border="0" style="width:35%;height:70%" class="w3-circle w3-hover-opacity">
-  <h3>Radical0xEd</h3>
-  <p>Web Designer & Programmer</p>
-</div>
-
-<div class="w3-quarter">
- <img src="https://i.ibb.co/Zh25NyK/20230507-153627.jpg" alt="20230507-153627" border="0" style="width:35%" class="w3-circle w3-hover-opacity">
-  <h3>Marley D.</h3>
-  <p>Support and Inovations</p>
-</div>
-
-<div class="w3-quarter">
-  <img src="https://i.ibb.co/fMGPt0V/20210503-161711.jpg" alt="20210503-161711" border="0"style="width:35%" class="w3-circle w3-hover-opacity">
-  <h3>Matt Shannon</h3>
-  <p>Lead Anylist & Advisor</p>
-</div>
-
-<div class="w3-quarter">
-  <img src="https://i.ibb.co/bgZ6SWS/R.jpg" alt="R" border="0" style="width:35%" class="w3-circle w3-hover-opacity">
-  <h3>Zer0</h3>
-  <p>Bug Tester/ Online Ops</p>
-</div>
-
-</div>
-</div>
-
-<!-- Work Row -->
-		<!-- Container -->
-<div class="w3-container" style="position:relative">
-  <a onclick="w3_open()" class="w3-button w3-xlarge w3-square w3-teal"
-  style="position:absolute;top:-28px;left:24px">QuiklinkTools</a>
-</div><br>
-
-<div class="w3-theme-l1" id="work">
-
-<div class="w3-padding-64">
-</div>
-
-    <style>
-        .row {
-            display: flex;
-        }
-        .column {
-            flex: 50%;
-        }
-        /* Add additional styling as needed */
-    </style>
-
-    <div class="row">
-        <div class="column">
-            <h2>Our Job!</h2>
-            <p>The world we know is in a radical state of advancement with no stopping anytime soon. Our team is full of intelligent, innovative, and informative individuals whose goal is to help any individual, business, or party advance into a new generation of strategies. Offering business building plans for online from the ground up, or an easy transition of your preexisting business to teach and help break into: Web3, New marketing strategies, and new ways of investing.</p>
-            <p>Our hope is to offer a range of strategies that fit each individual's needs. Create an e-commerce site that accepts and converts any currency, help build an online presence through marketing and social media using AI and other tools to make your business stand out, or just meet with our analysts and get the newest information on market trends and where to invest. A huge part of what we do is teaching the skills to do your business how you want while accessing any market you want. Generate passive income and learn a multitude of investing strategies. The world will only keep moving; get ahead of the pack!</p>
-        </div>
-        <div class="column">
-		
-
-         <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container" style="height:100%;width:100%">
-  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-  {
-  "autosize": true,
-  "symbol": "COINBASE:BTCUSD",
-  "interval": "120",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "en",
-  "hide_side_toolbar": false,
-  "allow_symbol_change": true,
-  "calendar": false,
-  "studies": [
-    "STD;Donchian_Channels",
-    "STD;Ichimoku%1Cloud",
-    "STD;MACD",
-    "STD;Stochastic_RSI"
-  ],
-  "support_host": "https://www.tradingview.com"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-        </div>
-    </div>
+		<!-- Image Header -->
+		<div class="w3-display-container w3-animate-opacity">
+		 <a href="https://ibb.co/CnhnX0g"><img src="https://i.ibb.co/WcgcdKZ/0xDreams.png" alt="0xDreams" border="0" style="width:100%;min-height:450px;max-height:500px;"></a>
+		  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+			<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Github">Nostalgia Simulator</button>
+		  </div>
+		</div>
 
 
 
 
-</div>
-
-<!-- Prepare a div in your <body> for Terminal to render -->
-<div id="integrated-terminal"></div>
-<script>
-  window.Jupiter.init({
-    displayMode: "integrated",
-    integratedTargetId: "integrated-terminal",
-    endpoint: "https://api.mainnet-beta.solana.com",
-  });
-</script>
-<!-- TradingView Widget BEGIN -->
-
-
-
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-  {
-  "feedMode": "all_symbols",
-  "isTransparent": false,
-  "displayMode": "adaptive",
-  "width": "100%",
-  "height": "100%",
-  "colorTheme": "dark",
-  "locale": "en"
-}
-  </script>
-</div>
-
-
-<!-- Pricing Row -->
-<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
-    <h2>PRICING</h2>
-    <p><a href="https://flapjacode.github.io/0xDP/">Choose a pricing plan that fits your needs.</a></p>
-
-<button class="w3-button w3-teal w3-padding-large" onclick="window.location.href='https://flapjacode.github.io/0xDP/'">
-    <i class="fa fa-check"></i> Sign Up
-</button><b> for free to use the forum and engage, access to help and answers, free learning tools, &
-        Endless Support</b>
-       
-		
-		
-
-
-    
-</div>
-
-<!-- Contact Container -->
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
-      <h3>0x12577 Cypher Way, <br> Grass Valley</br></h3>
-      <p>Always here to help, or Join our team!</p>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  California, US</p>
-      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +1 2792448417</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  flapjack_finance@proton.me</p>
-    </div>
-
-    <div class="w3-col m7">
-        <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="mailto:flapjack_finance@proton.me" method="post">
-            <div class="w3-section">      
-                <label>Name</label>
-                <input class="w3-input" type="text" name="Name" required>
-            </div>
-            <div class="w3-section">      
-                <label>Email</label>
-                <input class="w3-input" type="text" name="Email" required>
-            </div>
-            <div class="w3-section">      
-                <label>Message</label>
-                <input class="w3-input" type="text" name="Message" required>
-            </div>  
-            <input class="w3-check" type="checkbox" checked name="Like">
-            <label>Just Feedback (Not Looking For Response)</label>
-            <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-        </form>
-    </div>
-</
-
-  </div>
-</div>
+		<!-- TradingView Widget BEGIN -->
+		<div class="tradingview-widget-container">
+		  <div class="tradingview-widget-container__widget"></div>
+		  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+		  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+		  {
+		  "symbols": [
+			{
+			  "proName": "BITSTAMP:BTCUSD",
+			  "title": "Bitcoin"
+			},
+			{
+			  "proName": "BITSTAMP:ETHUSD",
+			  "title": "Ethereum"
+			},
+			{
+			  "description": "Solana",
+			  "proName": "BINANCE:SOLUSDT"
+			},
+			{
+			  "description": "PEPE",
+			  "proName": "BINANCE:PEPEUSDT"
+			},
+			{
+			  "description": "Poilygon",
+			  "proName": "COINBASE:MATICUSD"
+			},
+			{
+			  "description": "Hedera",
+			  "proName": "BYBIT:HBARUSDT"
+			},
+			{
+			  "description": "Bonk",
+			  "proName": "BYBIT:BONKUSDT"
+			},
+			{
+			  "description": "RATS",
+			  "proName": "MEXC:RATSUSDT"
+			},
+			{
+			  "description": "Fil EU",
+			  "proName": "COINBASE:FILEUR"
+			},
+			{
+			  "description": "ShibEu",
+			  "proName": "BITSTAMP:SHIBEUR"
+			},
+			{
+			  "description": "Perpetual",
+			  "proName": "BINGX:DYDXUSDT.PS"
+			},
+			{
+			  "description": "Perpetual",
+			  "proName": "BINGX:SLERFUSDT.P"
+			}
+		  ],
+		  "showSymbolLogo": true,
+		  "isTransparent": false,
+		  "displayMode": "adaptive",
+		  "colorTheme": "dark",
+		  "locale": "en"
+		}
+		  </script>
+		</div>
+		<!-- TradingView Widget END -->
 
 
+		<!-- Modal -->
+		<!-- Modal -->
+		<div id="id01" class="w3-modal">
+		  <div class="w3-modal-content w3-card-4 w3-animate-top">
+			<header class="w3-container w3-teal w3-display-container"> 
+			  <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+			  <h4>Listen! You're about to travel to another Link...</h4>
+			  <h5>It's dangerous to go alone! Take this   🗡    <i class="fa-solid fa-sword"></i></h5>
+			</header>
+			<div class="w3-container">
+			  <p></p>
+			  <p>Menu </p>
+				<p> <a class="w3-text-teal" href="https://soundcloud.com/admiror"> Music </a> </p>
+				<p><a class="w3-text-teal" href="https://flapjacode.github.io/0xDreamscape/">Start Quest...</a> </p>
+				<p><a class="w3-text-teal" href="https://lhohq.info/">DO NOT CLICK!</a> </p>
+			</div>
+			<footer class="w3-container w3-teal">
+			  <p>Trigger Warning: the last link contains an infinite linktree leading to flashing lights, odd sounds, conspiracy theorys, mature content, what we hope is an "art" film, and overall disturbing subject matter.. TAKE THIS /̵͇̿̿/’̿’̿ ̿ ̿̿ ̿̿ ̿̿ </p>
+			</footer>
+		  </div>
+		</div>
+
+
+		<!-- Team Container -->
+		<div class="w3-container w3-padding-64 w3-center" id="team">
+		<h2>OUR TEAM</h2>
+		<p>Contact to join dev team:</p>
 
 
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-  <h4>Follow Us</h4>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-  <a class="w3-button w3-large w3-teal" href="http://x.com/flapjacks4all" title="Twitter"><i class="fa fa-twitter"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
-  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> & <a href="https://docs.solanalabs.com/cli/install" target="_blank">Solana</a></p>
+		<div class="w3-quarter">
+		 <img src="https://i.ibb.co/xFD4SVL/OIP-3.jpg" alt="OIP-3" border="0" style="width:35%;height:70%" class="w3-circle w3-hover-opacity">
+		  <h3>Radical0xEd</h3>
+		  <p>Web Designer & Programmer</p>
+		</div>
 
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
-</footer>
+		<div class="w3-quarter">
+		 <img src="https://i.ibb.co/Zh25NyK/20230507-153627.jpg" alt="20230507-153627" border="0" style="width:35%" class="w3-circle w3-hover-opacity">
+		  <h3>Marley D.</h3>
+		  <p>Support and Inovations</p>
+		</div>
 
-<script>
-// Script for side navigation
-function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "300px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
+		<div class="w3-quarter">
+		  <img src="https://i.ibb.co/fMGPt0V/20210503-161711.jpg" alt="20210503-161711" border="0"style="width:35%" class="w3-circle w3-hover-opacity">
+		  <h3>Matt Shannon</h3>
+		  <p>Lead Anylist & Advisor</p>
+		</div>
 
-// Close side navigation
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
+		<div class="w3-quarter">
+		  <img src="https://i.ibb.co/bgZ6SWS/R.jpg" alt="R" border="0" style="width:35%" class="w3-circle w3-hover-opacity">
+		  <h3>Zer0</h3>
+		  <p>Bug Tester/ Online Ops</p>
+		</div>
 
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+		</div>
+		</div>
 
-</body>
-</html> 
+		<!-- Work Row -->
+				<!-- Container -->
+		<div class="w3-container" style="position:relative">
+		  <a onclick="w3_open()" class="w3-button w3-xlarge w3-square w3-teal"
+		  style="position:absolute;top:-28px;left:24px">QuiklinkTools</a>
+		</div><br>
+
+		<div class="w3-theme-l1" id="work">
+
+		<div class="w3-padding-64">
+		</div>
+
+			<style>
+				.row {
+					display: flex;
+				}
+				.column {
+					flex: 50%;
+				}
+				/* Add additional styling as needed */
+			</style>
+
+			<div class="row">
+				<div class="column">
+					<h2>Our Job!</h2>
+					<p>The world we know is in a radical state of advancement with no stopping anytime soon. Our team is full of intelligent, innovative, and informative individuals whose goal is to help any individual, business, or party advance into a new generation of strategies. Offering business building plans for online from the ground up, or an easy transition of your preexisting business to teach and help break into: Web3, New marketing strategies, and new ways of investing.</p>
+					<p>Our hope is to offer a range of strategies that fit each individual's needs. Create an e-commerce site that accepts and converts any currency, help build an online presence through marketing and social media using AI and other tools to make your business stand out, or just meet with our analysts and get the newest information on market trends and where to invest. A huge part of what we do is teaching the skills to do your business how you want while accessing any market you want. Generate passive income and learn a multitude of investing strategies. The world will only keep moving; get ahead of the pack!</p>
+				</div>
+				<div class="column">
+				
+
+				 <!-- TradingView Widget BEGIN -->
+		<div class="tradingview-widget-container" style="height:100%;width:100%">
+		  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+		  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+		  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+		  {
+		  "autosize": true,
+		  "symbol": "COINBASE:BTCUSD",
+		  "interval": "120",
+		  "timezone": "Etc/UTC",
+		  "theme": "dark",
+		  "style": "1",
+		  "locale": "en",
+		  "hide_side_toolbar": false,
+		  "allow_symbol_change": true,
+		  "calendar": false,
+		  "studies": [
+			"STD;Donchian_Channels",
+			"STD;Ichimoku%1Cloud",
+			"STD;MACD",
+			"STD;Stochastic_RSI"
+		  ],
+		  "support_host": "https://www.tradingview.com"
+		}
+		  </script>
+		</div>
+		<!-- TradingView Widget END -->
+				</div>
+			</div>
+
+
+
+
+		</div>
+
+		<!-- Prepare a div in your <body> for Terminal to render -->
+		<div id="integrated-terminal"></div>
+		<script>
+		  window.Jupiter.init({
+			displayMode: "integrated",
+			integratedTargetId: "integrated-terminal",
+			endpoint: "https://api.mainnet-beta.solana.com",
+		  });
+		</script>
+		<!-- TradingView Widget BEGIN -->
+
+
+
+		<!-- TradingView Widget BEGIN -->
+		<div class="tradingview-widget-container">
+		  <div class="tradingview-widget-container__widget"></div>
+		  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+		  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
+		  {
+		  "feedMode": "all_symbols",
+		  "isTransparent": false,
+		  "displayMode": "adaptive",
+		  "width": "100%",
+		  "height": "100%",
+		  "colorTheme": "dark",
+		  "locale": "en"
+		}
+		  </script>
+		</div>
+
+
+		<!-- Pricing Row -->
+		<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+			<h2>PRICING</h2>
+			<p><a href="https://flapjacode.github.io/0xDP/">Choose a pricing plan that fits your needs.</a></p>
+
+		<button class="w3-button w3-teal w3-padding-large" onclick="window.location.href='https://flapjacode.github.io/0xDP/'">
+			<i class="fa fa-check"></i> Sign Up
+		</button><b> for free to use the forum and engage, access to help and answers, free learning tools, &
+				Endless Support</b>
+			   
+				
+				
+
+
+			
+		</div>
+
+		<!-- Contact Container -->
+		<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+		  <div class="w3-row">
+			<div class="w3-col m5">
+			<div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+			  <h3>0x12577 Cypher Way, <br> Grass Valley</br></h3>
+			  <p>Always here to help, or Join our team!</p>
+			  <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  California, US</p>
+			  <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +1 2792448417</p>
+			  <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  flapjack_finance@proton.me</p>
+			</div>
+
+			<div class="w3-col m7">
+				<form class="w3-container w3-card-4 w3-padding-16 w3-white" action="mailto:flapjack_finance@proton.me" method="post">
+					<div class="w3-section">      
+						<label>Name</label>
+						<input class="w3-input" type="text" name="Name" required>
+					</div>
+					<div class="w3-section">      
+						<label>Email</label>
+						<input class="w3-input" type="text" name="Email" required>
+					</div>
+					<div class="w3-section">      
+						<label>Message</label>
+						<input class="w3-input" type="text" name="Message" required>
+					</div>  
+					<input class="w3-check" type="checkbox" checked name="Like">
+					<label>Just Feedback (Not Looking For Response)</label>
+					<button type="submit" class="w3-button w3-right w3-theme">Send</button>
+				</form>
+			</div>
+		</
+
+		  </div>
+		</div>
+
+
+
+
+
+		<!-- Footer -->
+		<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+		  <h4>Follow Us</h4>
+		  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+		  <a class="w3-button w3-large w3-teal" href="http://x.com/flapjacks4all" title="Twitter"><i class="fa fa-twitter"></i></a>
+		  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+		  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+		  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+		  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> & <a href="https://docs.solanalabs.com/cli/install" target="_blank">Solana</a></p>
+
+		  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+			<span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+			<a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+			<i class="fa fa-chevron-circle-up"></i></span></a>
+		  </div>
+		</footer>
+
+		<script>
+		// Script for side navigation
+		function w3_open() {
+		  var x = document.getElementById("mySidebar");
+		  x.style.width = "300px";
+		  x.style.paddingTop = "10%";
+		  x.style.display = "block";
+		}
+
+		// Close side navigation
+		function w3_close() {
+		  document.getElementById("mySidebar").style.display = "none";
+		}
+
+		// Used to toggle the menu on smaller screens when clicking on the menu button
+		function openNav() {
+		  var x = document.getElementById("navDemo");
+		  if (x.className.indexOf("w3-show") == -1) {
+			x.className += " w3-show";
+		  } else { 
+			x.className = x.className.replace(" w3-show", "");
+		  }
+		}
+		</script>
+
+		</body>
+		</html>
